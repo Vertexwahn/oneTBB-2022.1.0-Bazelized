@@ -171,7 +171,6 @@ cc_test(
     ]),
     includes = [
         "test",
-        "test/tbb",
     ],
     deps = [
         ":tbb",
@@ -196,7 +195,10 @@ TEST_NAMES = [
     ] + glob([
         "test/common/*.h",
     ]),
-    includes = ["test"],
+    includes = [
+        "test",
+        "test/tbb",
+    ],
     deps = [
         ":tbb",
     ],

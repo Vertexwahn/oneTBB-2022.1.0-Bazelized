@@ -227,3 +227,29 @@ cc_test(
         ":tbb",
     ],
 )
+
+cc_test(
+    name = "test_tick_count.cpp",
+    srcs = [
+        "test/tbb/test_tick_count.cpp",
+    ] + glob([
+        "test/common/*.h",
+    ]),
+    includes = ["test"],
+    deps = [
+        ":tbb",
+    ],
+)
+
+cc_test(
+    name = "test_write_once_node",
+    srcs = [
+        "test/tbb/test_write_once_node.cpp",
+    ] + glob([
+        "test/common/*.h",
+    ]),
+    includes = ["test"],
+    deps = [
+        ":tbb",
+    ],
+)

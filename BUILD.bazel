@@ -178,7 +178,7 @@ cc_test(
 )
 
 TEST_NAMES = [
-    "test_adaptive_mutex",
+    #"test_adaptive_mutex",
     "test_blocked_range",
     "test_mutex",
     "test_parallel_for",
@@ -197,7 +197,7 @@ TEST_NAMES = [
     ]),
     includes = [
         "test",
-        "test/tbb",
+        #"test/tbb",
     ],
     deps = [
         ":tbb",

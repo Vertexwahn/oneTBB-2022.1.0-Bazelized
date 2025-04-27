@@ -192,6 +192,7 @@ TEST_NAMES = [
     name = test_name,
     srcs = [
         "test/tbb/" + test_name + ".cpp",
+        "test/tbb/test_mutex.h",
     ] + glob([
         "test/common/*.h",
     ]),

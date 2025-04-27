@@ -163,7 +163,8 @@ cc_test(
 cc_test(
     name = "conformance_parallel_for",
     srcs = [
-        "test/conformance/conformance_parallel_for.cpp"
+        "test/conformance/conformance_parallel_for.cpp",
+        "test/tbb/test_partitioner.h"
     ] + glob([
         "test/common/*.h",
     ]),

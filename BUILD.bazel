@@ -197,7 +197,7 @@ TEST_NAMES = [
     ]),
     includes = [
         "test",
-        #"test/tbb",
+        "test/tbb",
     ],
     deps = [
         ":tbb",

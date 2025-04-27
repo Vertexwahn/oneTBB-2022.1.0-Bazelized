@@ -163,13 +163,16 @@ cc_test(
 cc_test(
     name = "conformance_parallel_for",
     srcs = [
+        "test/conformance/conformance_mutex.h",
         "test/conformance/conformance_parallel_for.cpp",
         "test/tbb/test_partitioner.h",
-        "test/conformance/conformance_mutex.h"
     ] + glob([
         "test/common/*.h",
     ]),
-    includes = ["test"],
+    includes = [
+        "test",
+        "test/tbb",
+    ],
     deps = [
         ":tbb",
     ],

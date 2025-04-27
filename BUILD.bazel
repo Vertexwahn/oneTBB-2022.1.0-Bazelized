@@ -182,7 +182,10 @@ TEST_NAMES = [
     "test_blocked_range",
     "test_mutex",
     "test_parallel_for",
+    "test_parallel_pipeline", # untested
     "test_parallel_reduce",
+    #"test_parallel_scan", # untested
+    #"test_parallel_sort", # untested
     "test_task",
     "test_tick_count",
     "test_write_once_node",

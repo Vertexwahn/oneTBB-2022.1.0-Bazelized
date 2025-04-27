@@ -135,6 +135,45 @@ cc_library(
 )
 
 cc_test(
+    name = "conformance_concurrent_map",
+    srcs = [
+        "test/conformance/conformance_concurrent_map.cpp"
+    ] + glob([
+        "test/common/*.h",
+    ]),
+    includes = ["test"],
+    deps = [
+        ":tbb",
+    ],
+)
+
+cc_test(
+    name = "conformance_concurrent_set",
+    srcs = [
+        "test/conformance/conformance_concurrent_set.cpp"
+    ] + glob([
+        "test/common/*.h",
+    ]),
+    includes = ["test"],
+    deps = [
+        ":tbb",
+    ],
+)
+
+cc_test(
+    name = "conformance_parallel_for",
+    srcs = [
+        "test/conformance/conformance_parallel_for.cpp"
+    ] + glob([
+        "test/common/*.h",
+    ]),
+    includes = ["test"],
+    deps = [
+        ":tbb",
+    ],
+)
+
+cc_test(
     name = "test_mutex",
     srcs = [
         "test/tbb/test_mutex.cpp",

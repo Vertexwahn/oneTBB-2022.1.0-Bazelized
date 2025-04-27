@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # DISCLAIMER: Bazel support is community-based. The maintainers do not
-# use Bazel internally. The Bazel build can have security risks or 
+# use Bazel internally. The Bazel build can have security risks or
 # optimization gaps.
 
 # WORKSPACE marker file needed by Bazel

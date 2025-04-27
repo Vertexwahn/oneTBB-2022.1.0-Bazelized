@@ -19,3 +19,33 @@ jobs:
     - name: Test
       run: |
         bazel test //...
+
+  build_and_test_windows_server_2025:
+    name: Windows Server 2022 build <Visual Studio 2022>
+    runs-on: windows-2025
+
+    steps:
+    - uses: actions/checkout@v4.2.2
+
+    - name: Build
+      run: |
+        bazel build //...
+
+    - name: Test
+      run: |
+        bazel test //...
+
+  build_and_test_macos15:
+    name: macOS 15 Bazel build <Apple Clang14>
+    runs-on: macOS-15
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Build
+        run: |
+          bazel build //...
+
+      - name: Test
+        run: |
+          bazel test //...

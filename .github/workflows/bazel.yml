@@ -6,7 +6,7 @@ on:
 
 jobs:
   build_and_test_ubuntu24:
-    name: Linux Ubuntu 24.04 build <GCC 9.4.0>
+    name: Linux Ubuntu 24.04 build <GCC 13.3.0>
     runs-on: ubuntu-24.04
 
     steps:
@@ -15,3 +15,7 @@ jobs:
     - name: Build
       run: |
         bazel build //...
+
+    - name: Test
+      run: |
+        bazel test //...
